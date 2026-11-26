@@ -1,0 +1,29 @@
+name: Төрийн мэдээлэл татах
+
+on:
+  schedule:
+    - cron: '0 20 * * *'   # өдөр бүр 04:00 (Улаанбаатар)
+    - cron: '0 8 * * *'    # өдөр бүр 16:00 (Улаанбаатар)
+  workflow_dispatch: {}      # гараар ажиллуулах товч
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: npm install playwright@1.47.2 && npx playwright install --with-deps chromium
+      - run: node fetch.mjs
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "Төрийн мэдээлэл: шинэчлэл $(date -u +%F)"
+          git push
