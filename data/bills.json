@@ -1,9 +1,9 @@
 {
- "checked_at": "2026-11-27T03:58:03.701Z",
+ "checked_at": "2026-11-27T09:40:11.484Z",
  "lists": {
   "submitted": {
    "title": "Өргөн мэдүүлсэн төслүүд",
-   "count": 245,
+   "count": 247,
    "items": [
     {
      "id": "8492d9f0-f82b-4868-a8d0-e276557b0024",
@@ -61,6 +61,55 @@
        "category": "Өргөн мэдүүлэх -Бусад",
        "name": "галт зэвсэг товьёг бусад байгууллага.docx",
        "url": "https://lawforum.parliament.mn/files/18723/?d=1"
+      }
+     ]
+    },
+    {
+     "id": "485c65e8-b4f4-49f0-8fc6-c19db1f5411f",
+     "list": "submitted",
+     "name": "ҮЛ ХӨДЛӨХ ЭД ХӨРӨНГИЙН АЛБАН ТАТВАРЫН ТУХАЙ ХУУЛЬД НЭМЭЛТ ОРУУЛАХ ТУХАЙ",
+     "type": "Монгол Улсын хууль",
+     "initiator": "УИХ-ын гишүүн ГАНБААТАР",
+     "step": "Өргөн баригдсан",
+     "publishDate": "2026-11-24T08:00:00.000Z",
+     "lawDate": "2026-11-23T08:00:00.000Z",
+     "updatedAt": "2026-11-27T00:32:29.485Z",
+     "url": "https://d.parliament.mn/tusul/485c65e8-b4f4-49f0-8fc6-c19db1f5411f",
+     "files": [
+      {
+       "category": "Өргөн мэдүүлэх -Төслийн документ файл /DOC, DOCX/",
+       "name": "1.Хуулийн төсөл.docx",
+       "url": "https://lawforum.parliament.mn/files/18746/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Үзэл баримтлал",
+       "name": "2.Үзэл баримтлал (2).docx",
+       "url": "https://lawforum.parliament.mn/files/18747/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Танилцуулга",
+       "name": "4.Танилцуулга.docx",
+       "url": "https://lawforum.parliament.mn/files/18748/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Танилцуулга",
+       "name": "3.Товч танилцуулга.docx",
+       "url": "https://lawforum.parliament.mn/files/18749/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Зардлын тооцооны судалгаа",
+       "name": "7.Зардлын тооцоо (3).docx",
+       "url": "https://lawforum.parliament.mn/files/18750/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Хууль тогтоомжийн хэрэгцээ шаардлагын урьдчилан тандан судалгаа",
+       "name": "5.Тандан судалгаа.docx",
+       "url": "https://lawforum.parliament.mn/files/18751/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Тухайн харилцааг зохицуулж байгаа хууль тогтоомжийн хэрэгжилтийн үр дагаврын үнэлгээ",
+       "name": "6.Үр нөлөө тайлан.docx",
+       "url": "https://lawforum.parliament.mn/files/18752/?d=1"
       }
      ]
     },
@@ -150,6 +199,60 @@
        "category": "Өргөн мэдүүлэх -Танилцуулга",
        "name": "3.Факторинг-Товч танилцуулга 2026.09.09.docx",
        "url": "https://lawforum.parliament.mn/files/18713/?d=1"
+      }
+     ]
+    },
+    {
+     "id": "bceac9f1-7612-4c1c-8d0f-aa0332794c01",
+     "list": "submitted",
+     "name": "НОТАРИАТЫН ТУХАЙ ХУУЛЬД НЭМЭЛТ,  ӨӨРЧЛӨЛТ ОРУУЛАХ ТУХАЙ",
+     "type": "Монгол Улсын хууль",
+     "initiator": "Монгол Улсын Засгийн газар",
+     "step": "Өргөн баригдсан",
+     "publishDate": "2026-11-20T08:00:00.000Z",
+     "lawDate": "2026-11-20T08:00:00.000Z",
+     "updatedAt": "2026-11-26T20:06:15.587Z",
+     "url": "https://d.parliament.mn/tusul/bceac9f1-7612-4c1c-8d0f-aa0332794c01",
+     "files": [
+      {
+       "category": "Өргөн мэдүүлэх -Танилцуулга",
+       "name": "10_28_нот_дэлгэрэнгүй_ТАНИЛЦУУЛГА_1.docx",
+       "url": "https://lawforum.parliament.mn/files/18741/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Танилцуулга",
+       "name": "10-26 нот товч танилцуулга (1).docx",
+       "url": "https://lawforum.parliament.mn/files/18742/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Хууль тогтоомжийн хэрэгцээ шаардлагын урьдчилан тандан судалгаа",
+       "name": "нот Тайлан үр нөлөө.docx",
+       "url": "https://lawforum.parliament.mn/files/18743/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Тухайн харилцааг зохицуулж байгаа хууль тогтоомжийн хэрэгжилтийн үр дагаврын үнэлгээ",
+       "name": "НТХ_н_хэрэгжилтийн_үр_дагаварт_хийсэн_үнэлгээ.docx",
+       "url": "https://lawforum.parliament.mn/files/18744/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Зардлын тооцооны судалгаа",
+       "name": "Нотариатын_тухай_хуулийн_зардал_2026_03_30_edited.docx",
+       "url": "https://lawforum.parliament.mn/files/18745/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Үзэл баримтлал",
+       "name": "Нотариат Үзэл баримтлал.pdf",
+       "url": "https://lawforum.parliament.mn/files/18753/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Ажлын хэсгийн бүрэлдэхүүн",
+       "name": "10-26  нот ажлын хэсэг (1).docx",
+       "url": "https://lawforum.parliament.mn/files/18754/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Бусад",
+       "name": "10-26 олон нийт нот (1).docx",
+       "url": "https://lawforum.parliament.mn/files/18755/?d=1"
       }
      ]
     },
@@ -918,7 +1021,7 @@
      "step": "Өргөн баригдсан",
      "publishDate": "2026-09-28T08:00:00.000Z",
      "lawDate": "2026-09-28T08:00:00.000Z",
-     "updatedAt": "2026-11-25T22:19:09.671Z",
+     "updatedAt": "2026-11-26T23:48:02.712Z",
      "url": "https://d.parliament.mn/tusul/0fce14fa-ec41-4412-92fe-6b1e754b5948",
      "files": [
       {
@@ -1004,7 +1107,7 @@
      "step": "Өргөн баригдсан",
      "publishDate": "2026-09-11T08:00:00.000Z",
      "lawDate": "2026-09-11T08:00:00.000Z",
-     "updatedAt": "2026-10-28T17:34:46.442Z",
+     "updatedAt": "2026-11-26T23:49:03.667Z",
      "url": "https://d.parliament.mn/tusul/9fc73f2c-cd0a-4004-bb46-38bde21358c8",
      "files": [
       {
@@ -1151,7 +1254,7 @@
      "step": "Батлах",
      "publishDate": "2026-08-30T08:00:00.000Z",
      "lawDate": "2026-08-31T08:00:00.000Z",
-     "updatedAt": "2026-11-19T21:54:58.520Z",
+     "updatedAt": "2026-11-27T00:48:11.891Z",
      "url": "https://d.parliament.mn/tusul/e2ce7745-9966-414d-bd53-e9df85b4e2d2",
      "files": [
       {
@@ -1348,6 +1451,41 @@
        "category": "Эцсийн хэлэлцүүлэг -Төслийн эцсийн хувилбар",
        "name": "Хууль хэлбэр батлах ЧНХ-5 .pdf",
        "url": "https://lawforum.parliament.mn/files/18590/?d=1"
+      },
+      {
+       "category": "Эцсийн найруулга -Улсын Их Хуралд танилцуулахаар тараасан төсөл",
+       "name": "1.Улсын төсөв-Эцсийн найруулга.docx",
+       "url": "https://lawforum.parliament.mn/files/18773/?d=1"
+      },
+      {
+       "category": "Эцсийн найруулга -Улсын Их Хуралд танилцуулахаар тараасан төсөл",
+       "name": "2.ҮБС-Эцсийн найруулга.docx",
+       "url": "https://lawforum.parliament.mn/files/18774/?d=1"
+      },
+      {
+       "category": "Эцсийн найруулга -Улсын Их Хуралд танилцуулахаар тараасан төсөл",
+       "name": "3.НДС-Эцсийн найруулга.docx",
+       "url": "https://lawforum.parliament.mn/files/18775/?d=1"
+      },
+      {
+       "category": "Эцсийн найруулга -Улсын Их Хуралд танилцуулахаар тараасан төсөл",
+       "name": "4.ЭМДС-Эцсийн найруулга.docx",
+       "url": "https://lawforum.parliament.mn/files/18776/?d=1"
+      },
+      {
+       "category": "Эцсийн найруулга -Улсын Их Хуралд танилцуулахаар тараасан төсөл",
+       "name": "ТТБтХ-Эцсийн найруулга.docx",
+       "url": "https://lawforum.parliament.mn/files/18777/?d=1"
+      },
+      {
+       "category": "Эцсийн найруулга -Улсын Их Хуралд танилцуулахаар тараасан төсөл",
+       "name": "ТХМ-Эцсийн найруулга.docx",
+       "url": "https://lawforum.parliament.mn/files/18778/?d=1"
+      },
+      {
+       "category": "Эцсийн найруулга -Улсын Их Хуралд танилцуулахаар тараасан төсөл",
+       "name": "Хавсралт-1-Эцсийн найруулга.docx",
+       "url": "https://lawforum.parliament.mn/files/18779/?d=1"
       }
      ]
     },
@@ -2124,7 +2262,7 @@
      "step": "Өргөн баригдсан",
      "publishDate": "2026-07-03T01:46:24.920Z",
      "lawDate": "2025-07-02T08:00:00.000Z",
-     "updatedAt": "2026-11-23T17:07:45.151Z",
+     "updatedAt": "2026-11-26T21:11:40.004Z",
      "url": "https://d.parliament.mn/tusul/51eba113-451a-4e3c-8b05-41729efc80d2",
      "files": [
       {
@@ -3911,7 +4049,7 @@
      "step": "Хэлэлцэх эсэх",
      "publishDate": "2026-05-29T02:15:27.801Z",
      "lawDate": "2026-05-29T08:00:00.000Z",
-     "updatedAt": "2026-11-22T19:54:14.914Z",
+     "updatedAt": "2026-11-27T00:28:04.678Z",
      "url": "https://d.parliament.mn/tusul/309e9a13-9f69-47ad-91b8-1010dd71ce47",
      "files": [
       {
@@ -7580,7 +7718,7 @@
      "step": "Өргөн баригдсан",
      "publishDate": "2025-07-04T09:02:51.584Z",
      "lawDate": "2025-07-04T08:00:00.000Z",
-     "updatedAt": "2026-11-20T01:04:25.378Z",
+     "updatedAt": "2026-11-26T20:05:44.623Z",
      "url": "https://d.parliament.mn/tusul/3e728044-9585-4fa2-a1cd-ea8f515d5171",
      "files": [
       {
@@ -12057,8 +12195,116 @@
   },
   "drafting": {
    "title": "Боловсруулж буй төслүүд",
-   "count": 182,
+   "count": 184,
    "items": [
+    {
+     "id": "2f564ce3-5b17-4cfd-8f62-ad311f2e49cc",
+     "list": "drafting",
+     "name": "ҮНДЭСНИЙ ИХ БАЯР НААДМЫН ТУХАЙ ХУУЛЬД НЭМЭЛТ, ӨӨРЧЛӨЛТ ОРУУЛАХ ТУХАЙ",
+     "type": "Монгол Улсын хууль",
+     "initiator": "УИХ-ын гишүүн АЛТАНГЭРЭЛ",
+     "step": "Боловсруулж буй",
+     "publishDate": "2026-11-27T08:00:00.000Z",
+     "lawDate": "2026-11-27T08:00:00.000Z",
+     "updatedAt": "2026-11-27T00:26:49.224Z",
+     "url": "https://d.parliament.mn/tusul/2f564ce3-5b17-4cfd-8f62-ad311f2e49cc",
+     "files": [
+      {
+       "category": "Өргөн мэдүүлэх -Төслийн документ файл /DOC, DOCX/",
+       "name": "tamga_songoltot_undsen_uraldaan_1.docx",
+       "url": "https://lawforum.parliament.mn/files/18757/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Үзэл баримтлал",
+       "name": "uzel_barimtlal_naadam.docx",
+       "url": "https://lawforum.parliament.mn/files/18758/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Танилцуулга",
+       "name": "Naadam_delgerengui.docx",
+       "url": "https://lawforum.parliament.mn/files/18759/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Танилцуулга",
+       "name": "Naadam_huuli_tovch_taniltsuulga.docx",
+       "url": "https://lawforum.parliament.mn/files/18760/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Хууль тогтоомжийн хэрэгцээ шаардлагын урьдчилан тандан судалгаа",
+       "name": "Naadam_Tandan_Sudalgaa_2026.docx",
+       "url": "https://lawforum.parliament.mn/files/18761/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Тухайн харилцааг зохицуулж байгаа хууль тогтоомжийн хэрэгжилтийн үр дагаврын үнэлгээ",
+       "name": "Naadam_Huuli_Heregjiiltiin_Unelgee_2026.docx",
+       "url": "https://lawforum.parliament.mn/files/18762/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Тухайн харилцааг зохицуулж байгаа хууль тогтоомжийн хэрэгжилтийн үр дагаврын үнэлгээ",
+       "name": "Naadam_Ur_Nuluunii_Tailan.docx",
+       "url": "https://lawforum.parliament.mn/files/18763/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Зардлын тооцооны судалгаа",
+       "name": "Naadam_Zardliin_Tootsoo_2026.docx",
+       "url": "https://lawforum.parliament.mn/files/18764/?d=1"
+      }
+     ]
+    },
+    {
+     "id": "170891e1-0433-4f3a-aab4-da202898d285",
+     "list": "drafting",
+     "name": "АЖ АХУЙН НЭГЖИЙН ОРЛОГЫН АЛБАН ТАТВАРЫН ТУХАЙ ХУУЛЬД ӨӨРЧЛӨЛТ ОРУУЛАХ ТУХАЙ",
+     "type": "Монгол Улсын хууль",
+     "initiator": "УИХ-ын гишүүн АЛТАНГЭРЭЛ",
+     "step": "Боловсруулж буй",
+     "publishDate": "2026-11-27T08:00:00.000Z",
+     "lawDate": "2026-11-27T08:00:00.000Z",
+     "updatedAt": "2026-11-27T00:25:15.872Z",
+     "url": "https://d.parliament.mn/tusul/170891e1-0433-4f3a-aab4-da202898d285",
+     "files": [
+      {
+       "category": "Өргөн мэдүүлэх -Төслийн документ файл /DOC, DOCX/",
+       "name": "Төсөл_2026_1.docx",
+       "url": "https://lawforum.parliament.mn/files/18765/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Үзэл баримтлал",
+       "name": "AANOAT_uzel_barimtlal_400km.docx",
+       "url": "https://lawforum.parliament.mn/files/18766/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Танилцуулга",
+       "name": "ДЭЛГЭРЭНГҮЙ ТАНИЛЦУУЛГА_4.docx",
+       "url": "https://lawforum.parliament.mn/files/18767/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Танилцуулга",
+       "name": "ААНОАТ_товч_танилцуулга_засварласан.docx",
+       "url": "https://lawforum.parliament.mn/files/18768/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Хууль тогтоомжийн хэрэгцээ шаардлагын урьдчилан тандан судалгаа",
+       "name": "Тандан судалгаа_2026_3.docx",
+       "url": "https://lawforum.parliament.mn/files/18769/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Тухайн харилцааг зохицуулж байгаа хууль тогтоомжийн хэрэгжилтийн үр дагаврын үнэлгээ",
+       "name": "ААНОАТ_төслийн_үр_нөлөөний_үнэлгээ.docx",
+       "url": "https://lawforum.parliament.mn/files/18770/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Тухайн харилцааг зохицуулж байгаа хууль тогтоомжийн хэрэгжилтийн үр дагаврын үнэлгээ",
+       "name": "Хэрэгжилт_Үнэлгээний_тайлан_1.docx",
+       "url": "https://lawforum.parliament.mn/files/18771/?d=1"
+      },
+      {
+       "category": "Өргөн мэдүүлэх -Зардлын тооцооны судалгаа",
+       "name": "Зардлын тооцоо_1.docx",
+       "url": "https://lawforum.parliament.mn/files/18772/?d=1"
+      }
+     ]
+    },
     {
      "id": "434744b8-2636-435d-a8b9-9b67c7e15bdf",
      "list": "drafting",
@@ -17706,7 +17952,7 @@
      "step": "Боловсруулж буй",
      "publishDate": "2025-07-08T01:32:03.605Z",
      "lawDate": "2025-07-07T08:00:00.000Z",
-     "updatedAt": "2026-09-03T22:08:42.755Z",
+     "updatedAt": "2026-11-27T00:53:16.250Z",
      "url": "https://d.parliament.mn/tusul/ea4bc80c-71d9-4f63-b070-d95b82f2df42",
      "files": [
       {

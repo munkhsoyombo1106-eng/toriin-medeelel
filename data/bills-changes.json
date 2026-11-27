@@ -55,5 +55,49 @@
    "doc_date": "2026-10-16",
    "ambiguous": true
   }
+ },
+ {
+  "detected_at": "2026-11-27T09:40:11.484Z",
+  "id": "485c65e8-b4f4-49f0-8fc6-c19db1f5411f",
+  "name": "ҮЛ ХӨДЛӨХ ЭД ХӨРӨНГИЙН АЛБАН ТАТВАРЫН ТУХАЙ ХУУЛЬД НЭМЭЛТ ОРУУЛАХ ТУХАЙ",
+  "initiator": "УИХ-ын гишүүн ГАНБААТАР",
+  "url": "https://d.parliament.mn/tusul/485c65e8-b4f4-49f0-8fc6-c19db1f5411f",
+  "list": "submitted",
+  "publishDate": "2026-11-24T08:00:00.000Z",
+  "kind": "new",
+  "step": "Өргөн баригдсан"
+ },
+ {
+  "detected_at": "2026-11-27T09:40:11.484Z",
+  "id": "bceac9f1-7612-4c1c-8d0f-aa0332794c01",
+  "name": "НОТАРИАТЫН ТУХАЙ ХУУЛЬД НЭМЭЛТ,  ӨӨРЧЛӨЛТ ОРУУЛАХ ТУХАЙ",
+  "initiator": "Монгол Улсын Засгийн газар",
+  "url": "https://d.parliament.mn/tusul/bceac9f1-7612-4c1c-8d0f-aa0332794c01",
+  "list": "submitted",
+  "publishDate": "2026-11-20T08:00:00.000Z",
+  "kind": "new",
+  "step": "Өргөн баригдсан"
+ },
+ {
+  "detected_at": "2026-11-27T09:40:11.484Z",
+  "id": "2f564ce3-5b17-4cfd-8f62-ad311f2e49cc",
+  "name": "ҮНДЭСНИЙ ИХ БАЯР НААДМЫН ТУХАЙ ХУУЛЬД НЭМЭЛТ, ӨӨРЧЛӨЛТ ОРУУЛАХ ТУХАЙ",
+  "initiator": "УИХ-ын гишүүн АЛТАНГЭРЭЛ",
+  "url": "https://d.parliament.mn/tusul/2f564ce3-5b17-4cfd-8f62-ad311f2e49cc",
+  "list": "drafting",
+  "publishDate": "2026-11-27T08:00:00.000Z",
+  "kind": "new",
+  "step": "Боловсруулж буй"
+ },
+ {
+  "detected_at": "2026-11-27T09:40:11.484Z",
+  "id": "170891e1-0433-4f3a-aab4-da202898d285",
+  "name": "АЖ АХУЙН НЭГЖИЙН ОРЛОГЫН АЛБАН ТАТВАРЫН ТУХАЙ ХУУЛЬД ӨӨРЧЛӨЛТ ОРУУЛАХ ТУХАЙ",
+  "initiator": "УИХ-ын гишүүн АЛТАНГЭРЭЛ",
+  "url": "https://d.parliament.mn/tusul/170891e1-0433-4f3a-aab4-da202898d285",
+  "list": "drafting",
+  "publishDate": "2026-11-27T08:00:00.000Z",
+  "kind": "new",
+  "step": "Боловсруулж буй"
  }
 ]
