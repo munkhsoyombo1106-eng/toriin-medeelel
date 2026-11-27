@@ -1,7 +1,7 @@
 // d.parliament.mn (Цахим парламент)-ийн "Өргөн мэдүүлсэн төслүүд" ба "Боловсруулж буй төслүүд"
 // жагсаалтыг нээлттэй API-аас татаж data/bills.json-д хадгалж,
 // шинэ төсөл болон үе шат өөрчлөгдсөнийг data/bills-changes.json-д бүртгэнэ.
-import { mkdirSync, writeFileSync, existsSync, readFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync, existsSync, readFileSync, readdirSync } from 'node:fs';
 
 const API = 'https://api-d.parliament.mn/tusul/tusulList';
 const APP_ID = '56cc90a2-83a0-4e1f-994d-7fdebfdfbf68';
@@ -69,6 +69,83 @@ for (const [key, cfg] of Object.entries(LISTS)) {
   result.lists[key] = { title: cfg.title, count: first.count, items: items.map(t => slim(t, key)) };
 }
 
+// ---- "Төрийн мэдээлэл"-тэй тулгах (албан ёсны эх сурвалж давуу) ----
+// d.parliament.mn-ийн үе шат хоцорч шинэчлэгддэг тул репод хадгалсан дугааруудын бүрэн текстээс
+// (data/<он>-no<N>.txt) тухайн төслийн нэртэй хууль батлагдаж нийтлэгдсэн эсэх, эсвэл
+// "Хуулийн төсөл буцаах тухай" тогтоолоор буцаагдсан эсэхийг хайна.
+const norm = s => (s || '').toUpperCase().replace(/Ё/g, 'Е').replace(/[^А-ЯӨҮA-Z0-9]+/g, ' ').replace(/\s+/g, ' ').trim();
+function coreTitle(name) {
+  let n = norm(name);
+  n = n.replace(/ ХУУЛ(ИЙН|Ь) ШИНЭЧИЛСЭН НАЙРУУЛГ(ЫН ТӨСӨЛ|А)$/, ' ШИНЭЧИЛСЭН НАЙРУУЛГА');
+  n = n.replace(/ ШИНЭЧИЛСЭН НАЙРУУЛГЫН ТӨСӨЛ$/, ' ШИНЭЧИЛСЭН НАЙРУУЛГА');
+  n = n.replace(/ (ХУУЛИЙН )?ТӨСӨЛ$/, '');
+  return n;
+}
+const MONTH_RE = /(\d{4}) ОНЫ (\d{1,2}) (?:ДУГААР|ДҮГЭЭР) (?:[^ ]+ ){0,12}?САРЫН (\d{1,2})/;
+function loadIssues() {
+  const meta = existsSync('data/latest.json') ? JSON.parse(readFileSync('data/latest.json', 'utf8')) : {};
+  const known = new Map((meta.recent_issues || []).map(i => [`${i.year}-${i.no}`, i]));
+  const issues = [];
+  for (const f of readdirSync('data')) {
+    const m = f.match(/^(\d{4})-no(\d+)\.txt$/);
+    if (!m) continue;
+    const info = known.get(`${+m[1]}-${+m[2]}`) || { year: +m[1], no: +m[2] };
+    const lines = readFileSync(`data/${f}`, 'utf8').split('\n')
+      .filter(l => !/[᠀-᢯]/.test(l) && !/îí|ÒªÐÈÉÍ/.test(l) && !/^\s*\d+\s*$/.test(l));
+    // Баримт бичиг бүрийг толгойгоор нь хуваана
+    const docs = [];
+    let cur = null;
+    for (const l of lines) {
+      const h = l.trim();
+      if (/^МОНГОЛ УЛСЫН (ХУУЛЬ|ИХ ХУРЛЫН ТОГТООЛ|ЕРӨНХИЙЛӨГЧИЙН ЗАРЛИГ|ЗАСГИЙН ГАЗРЫН ТОГТООЛ)$/.test(h)) {
+        cur = { kind: h.includes('ХУУЛЬ') ? 'law' : 'other', text: '' };
+        docs.push(cur);
+      } else if (cur) cur.text += ' ' + l;
+    }
+    for (const d of docs) {
+      d.n = norm(d.text);
+      d.head = d.n.slice(0, 600);
+      const dm = d.n.slice(0, 300).match(MONTH_RE);
+      d.date = dm ? `${dm[1]}-${dm[2].padStart(2, '0')}-${dm[3].padStart(2, '0')}` : null;
+      d.isReturn = d.kind === 'other' && /ХУУЛИЙН ТӨСӨЛ (БУЦААХ|ХЭЛЭЛЦЭХГҮЙ БАЙХ)/.test(d.head);
+    }
+    issues.push({ ...info, docs });
+  }
+  return issues;
+}
+const issues = loadIssues();
+const allItems = Object.values(result.lists).flatMap(l => l.items);
+const titleCount = new Map();
+for (const it of allItems) titleCount.set(coreTitle(it.name), (titleCount.get(coreTitle(it.name)) || 0) + 1);
+for (const it of allItems) {
+  const t = coreTitle(it.name);
+  // Зөвхөн өргөн мэдүүлсэн төсөл батлагдах/буцаагдах боломжтой
+  if (it.list !== 'submitted' || t.length < 12) continue;
+  const since = (it.publishDate || '').slice(0, 10);
+  for (const iss of issues) {
+    for (const d of iss.docs) {
+      // Огноогүй блок = ГАРЧИГ (агуулга биш) — алгасна; төсөл өргөн мэдүүлэхээс өмнө баталсан хууль таарахгүй
+      if (!d.date || (since && d.date < since)) continue;
+      let status = null;
+      if (d.kind === 'law' && d.head.includes(t)) status = 'passed';
+      else if (d.isReturn && d.n.includes(t)) status = 'returned';
+      if (!status) continue;
+      const prevOfficial = it.official;
+      if (prevOfficial && prevOfficial.issue_date >= (iss.date || '')) continue;
+      it.official = {
+        status,
+        issue: iss.total ? `№${iss.no}(${iss.total})` : `№${iss.no}`,
+        issue_date: iss.date || null,
+        issue_url: iss.url || null,
+        doc_date: d.date,
+        // Нэг ижил нэртэй (жишээ нь "...хуульд нэмэлт оруулах тухай") олон төсөл байж болох тул
+        // таарсан нэр давхцаж байвал тоймд "баталгаажуулах шаардлагатай" гэж тэмдэглэнэ.
+        ambiguous: titleCount.get(t) > 1 || /НЭМЭЛТ|ӨӨРЧЛӨЛТ/.test(t),
+      };
+    }
+  }
+}
+
 // Өмнөх төлөвтэй харьцуулах
 const prev = existsSync('data/bills.json') ? JSON.parse(readFileSync('data/bills.json', 'utf8')) : null;
 const changesFile = 'data/bills-changes.json';
@@ -83,6 +160,19 @@ if (prev) {
       if (!old) changes.push({ ...base, kind: 'new', step: it.step });
       else if (old.list !== it.list) changes.push({ ...base, kind: 'moved', from_list: old.list, from_step: old.step, step: it.step });
       else if (old.step !== it.step) changes.push({ ...base, kind: 'step', from_step: old.step, step: it.step });
+      const oldOff = old && old.official ? `${old.official.status}|${old.official.issue}` : null;
+      const newOff = it.official ? `${it.official.status}|${it.official.issue}` : null;
+      if (newOff && newOff !== oldOff) changes.push({ ...base, kind: 'official', step: it.step, official: it.official });
+    }
+  }
+  // Жагсаалтаас хасагдсан (батлагдсан, буцаагдсан, татагдсан байж болзошгүй)
+  const curIds = new Set(allItems.map(i => i.id));
+  for (const l of Object.values(prev.lists)) {
+    for (const it of l.items) {
+      if (!curIds.has(it.id)) {
+        changes.push({ detected_at: now, id: it.id, name: it.name, initiator: it.initiator, url: it.url, list: it.list,
+          publishDate: it.publishDate, kind: 'removed', from_step: it.step, official: it.official || null });
+      }
     }
   }
 }
