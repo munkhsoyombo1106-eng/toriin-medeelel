@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-27T03:48:45.955Z",
+ "checked_at": "2026-11-27T03:58:03.701Z",
  "lists": {
   "submitted": {
    "title": "Өргөн мэдүүлсэн төслүүд",
@@ -966,7 +966,15 @@
        "name": "Санал, дүгнэлт_Хэлэлцэх эсэх.pdf",
        "url": "https://lawforum.parliament.mn/files/18449/?d=1"
       }
-     ]
+     ],
+     "official": {
+      "status": "passed",
+      "issue": "№43(1438)",
+      "issue_date": "2026-11-20",
+      "issue_url": "https://parliament.mn/news/toriin-medeelel-emkhetgeliin-2026-ony-no43-1438",
+      "doc_date": "2026-10-16",
+      "ambiguous": true
+     }
     },
     {
      "id": "9294b071-4358-46af-90d1-7e291e3c6a38",
@@ -2203,7 +2211,15 @@
        "name": "Evaluation.docx",
        "url": "https://lawforum.parliament.mn/files/17692/?d=1"
       }
-     ]
+     ],
+     "official": {
+      "status": "passed",
+      "issue": "№43(1438)",
+      "issue_date": "2026-11-20",
+      "issue_url": "https://parliament.mn/news/toriin-medeelel-emkhetgeliin-2026-ony-no43-1438",
+      "doc_date": "2026-10-23",
+      "ambiguous": true
+     }
     },
     {
      "id": "63eaacbe-028a-4149-90fd-777ccc637de2",
@@ -4199,7 +4215,15 @@
        "name": "06.24 Ашигт малтмал СД.pdf",
        "url": "https://lawforum.parliament.mn/files/17565/?d=1"
       }
-     ]
+     ],
+     "official": {
+      "status": "passed",
+      "issue": "№43(1438)",
+      "issue_date": "2026-11-20",
+      "issue_url": "https://parliament.mn/news/toriin-medeelel-emkhetgeliin-2026-ony-no43-1438",
+      "doc_date": "2026-10-16",
+      "ambiguous": true
+     }
     },
     {
      "id": "bb2bab72-6342-4365-a044-caf959c5965a",

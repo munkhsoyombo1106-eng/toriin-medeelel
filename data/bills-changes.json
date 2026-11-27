@@ -1,1 +1,59 @@
-[]
+[
+ {
+  "detected_at": "2026-11-27T03:58:03.701Z",
+  "id": "0fce14fa-ec41-4412-92fe-6b1e754b5948",
+  "name": "ТӨСВИЙН ТУХАЙ ХУУЛЬД НЭМЭЛТ,  ӨӨРЧЛӨЛТ ОРУУЛАХ ТУХАЙ",
+  "initiator": "УИХ-ын гишүүн ЦЭНГҮҮН",
+  "url": "https://d.parliament.mn/tusul/0fce14fa-ec41-4412-92fe-6b1e754b5948",
+  "list": "submitted",
+  "publishDate": "2026-09-28T08:00:00.000Z",
+  "kind": "official",
+  "step": "Өргөн баригдсан",
+  "official": {
+   "status": "passed",
+   "issue": "№43(1438)",
+   "issue_date": "2026-11-20",
+   "issue_url": "https://parliament.mn/news/toriin-medeelel-emkhetgeliin-2026-ony-no43-1438",
+   "doc_date": "2026-10-16",
+   "ambiguous": true
+  }
+ },
+ {
+  "detected_at": "2026-11-27T03:58:03.701Z",
+  "id": "80dff703-2e1f-4d7a-9ed5-dda803460642",
+  "name": "УЛС ТӨРИЙН ХИЛС ХЭРЭГТ ХЭЛМЭГДЭГЧДИЙГ ЦАГААТГАХ, ТЭДЭНД НӨХӨХ ОЛГОВОР ОЛГОХ ТУХАЙ ХУУЛЬД НЭМЭЛТ, ӨӨРЧЛӨЛТ ОРУУЛАХ ТУХАЙ",
+  "initiator": "УИХ-ын гишүүн ПҮРЭВДОРЖ",
+  "url": "https://d.parliament.mn/tusul/80dff703-2e1f-4d7a-9ed5-dda803460642",
+  "list": "submitted",
+  "publishDate": "2026-07-02T08:00:00.000Z",
+  "kind": "official",
+  "step": null,
+  "official": {
+   "status": "passed",
+   "issue": "№43(1438)",
+   "issue_date": "2026-11-20",
+   "issue_url": "https://parliament.mn/news/toriin-medeelel-emkhetgeliin-2026-ony-no43-1438",
+   "doc_date": "2026-10-23",
+   "ambiguous": true
+  }
+ },
+ {
+  "detected_at": "2026-11-27T03:58:03.701Z",
+  "id": "a8d32cbf-db26-4572-9c4a-695d7fe5fafe",
+  "name": "АШИГТ МАЛТМАЛЫН ТУХАЙ ХУУЛЬД НЭМЭЛТ, ӨӨРЧЛӨЛТ ОРУУЛАХ ТУХАЙ",
+  "initiator": "Монгол Улсын Засгийн газар",
+  "url": "https://d.parliament.mn/tusul/a8d32cbf-db26-4572-9c4a-695d7fe5fafe",
+  "list": "submitted",
+  "publishDate": "2026-05-26T02:56:51.319Z",
+  "kind": "official",
+  "step": "Эцсийн хэлэлцүүлэг",
+  "official": {
+   "status": "passed",
+   "issue": "№43(1438)",
+   "issue_date": "2026-11-20",
+   "issue_url": "https://parliament.mn/news/toriin-medeelel-emkhetgeliin-2026-ony-no43-1438",
+   "doc_date": "2026-10-16",
+   "ambiguous": true
+  }
+ }
+]
